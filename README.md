@@ -17,6 +17,12 @@ This repository serves two purposes:
 
 ## Quick Start
 
+### Add marketplace
+
+```bash
+claude plugin marketplace add pers0n4/claude-plugins
+```
+
 ### Install a plugin
 
 ```bash
