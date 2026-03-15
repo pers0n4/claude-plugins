@@ -1,8 +1,8 @@
 pre-commit:
   parallel: true
   commands:
-    format-markdown:
-      glob: "**/*.md"
+    format:
+      glob: "**/*.{md,json,toml,yaml,yml}"
       run: dprint fmt {staged_files}
       stage_fixed: true
     validate-plugin:
