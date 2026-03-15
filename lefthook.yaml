@@ -5,6 +5,9 @@ pre-commit:
       glob: "**/*.md"
       run: dprint fmt {staged_files}
       stage_fixed: true
+    validate-plugin:
+      glob: "plugins/*/.claude-plugin/plugin.json"
+      run: claude plugin validate "$(dirname "$(dirname "{staged_files}")")"
 
 commit-msg:
   commands:
