@@ -1,0 +1,21 @@
+{
+  "name": "pers0n4",
+  "description": "Directory of popular Claude Code extensions including development tools, productivity plugins, and MCP integrations",
+  "owner": {
+    "name": "Dong-Young Kim",
+    "email": "31337.persona@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "git-commit",
+      "description": "Git commit workflow following Conventional Commits v1.0.0 with type/scope analysis and HEREDOC templates",
+      "version": "0.1.0",
+      "author": {
+        "name": "Dong-Young Kim",
+        "email": "31337.persona@gmail.com"
+      },
+      "source": "./plugins/git-commit",
+      "category": "productivity"
+    }
+  ]
+}
