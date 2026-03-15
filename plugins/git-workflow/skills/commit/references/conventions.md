@@ -1,6 +1,6 @@
 # Conventional Commits v1.0.0 Reference
 
-Reference material for the git-commit skill. Read this file when you need details on types, scopes, footers, or breaking changes.
+Reference material for the commit skill. Read this file when you need details on types, scopes, footers, or breaking changes.
 
 ## Types
 

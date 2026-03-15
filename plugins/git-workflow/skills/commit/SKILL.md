@@ -1,5 +1,5 @@
 ---
-name: git-commit
+name: commit
 description: This skill should be used when the user asks to commit changes, says "/commit", "커밋", or "커밋해줘", wants to save work to git, mentions conventional commits, or asks about commit message format. It creates git commits following Conventional Commits v1.0.0 by analyzing staged changes to determine type, scope, and message. It should also be triggered when a commit is needed as part of a larger workflow.
 allowed-tools: Bash(git *)
 argument-hint: "[message hint]"
@@ -16,7 +16,7 @@ Supporting files (read on demand):
 
 ## Input
 
-If `$ARGUMENTS` is provided (e.g. `/git-commit fix typo in login page`), use it as a hint for the commit message. The hint guides type, scope, and message decisions — but the actual diff always takes precedence. If the hint says "fix" but the diff adds a new feature, the diff wins.
+If `$ARGUMENTS` is provided (e.g. `/commit fix typo in login page`), use it as a hint for the commit message. The hint guides type, scope, and message decisions — but the actual diff always takes precedence. If the hint says "fix" but the diff adds a new feature, the diff wins.
 
 ## Workflow
 

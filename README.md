@@ -13,7 +13,7 @@ This repository serves two purposes:
 
 | Plugin                            | Description                                                                                              | Version |
 | --------------------------------- | -------------------------------------------------------------------------------------------------------- | ------- |
-| [git-commit](plugins/git-commit/) | Git commit workflow following Conventional Commits v1.0.0 with type/scope analysis and HEREDOC templates | 0.1.0   |
+| [git-workflow](plugins/git-workflow/) | Git workflow tools — commit with Conventional Commits v1.0.0, type/scope analysis, and HEREDOC templates | 0.1.0   |
 
 ## Quick Start
 
@@ -27,10 +27,10 @@ claude plugin marketplace add pers0n4/claude-plugins
 
 ```bash
 # From marketplace
-claude plugin install git-commit@pers0n4
+claude plugin install git-workflow@pers0n4
 
 # Or load directly from local path
-claude --plugin-dir ./plugins/git-commit
+claude --plugin-dir ./plugins/git-workflow
 ```
 
 ## Repository Structure
@@ -39,9 +39,9 @@ claude --plugin-dir ./plugins/git-commit
 .claude-plugin/
   marketplace.json            # Marketplace manifest (registers plugins for distribution)
 plugins/
-  git-commit/                 # Conventional Commits skill plugin
+  git-workflow/               # Git workflow skill plugin
     .claude-plugin/plugin.json
-    skills/git-commit/        # SKILL.md + references + templates
+    skills/commit/            # SKILL.md + references + templates
 ```
 
 ## Development
@@ -50,8 +50,8 @@ plugins/
 
 ```bash
 # Validate plugin structure
-claude plugin validate ./plugins/git-commit
+claude plugin validate ./plugins/git-workflow
 
 # Load with debug output
-claude --plugin-dir ./plugins/git-commit --debug
+claude --plugin-dir ./plugins/git-workflow --debug
 ```

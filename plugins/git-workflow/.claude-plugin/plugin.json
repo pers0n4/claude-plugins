@@ -1,6 +1,6 @@
 {
-  "name": "git-commit",
-  "description": "Git commit workflow following Conventional Commits v1.0.0 with type/scope analysis and HEREDOC templates",
+  "name": "git-workflow",
+  "description": "Git workflow tools — commit with Conventional Commits v1.0.0, type/scope analysis, and HEREDOC templates",
   "version": "0.1.0",
   "author": {
     "name": "Dong-Young Kim",

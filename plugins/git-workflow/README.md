@@ -1,6 +1,6 @@
-# git-commit
+# git-workflow
 
-A Claude Code plugin that creates git commits following [Conventional Commits v1.0.0](https://www.conventionalcommits.org/).
+A Claude Code plugin for git workflows. Currently includes a commit skill following [Conventional Commits v1.0.0](https://www.conventionalcommits.org/).
 
 ## What It Does
 
@@ -16,17 +16,17 @@ Analyzes staged changes and composes a well-structured commit message with:
 
 ```bash
 # From marketplace
-claude plugin install git-commit@pers0n4
+claude plugin install git-workflow@pers0n4
 
 # From local directory (for development)
-claude --plugin-dir ./plugins/git-commit
+claude --plugin-dir ./plugins/git-workflow
 ```
 
 ## Usage
 
 ```
-/git-commit:git-commit              # Analyze staged changes and compose commit
-/git-commit:git-commit fix login    # Use hint to guide commit message
+/git-workflow:commit              # Analyze staged changes and compose commit
+/git-workflow:commit fix login    # Use hint to guide commit message
 ```
 
 The skill reads `git diff --cached` to determine what will be committed, then presents a complete `git commit` command for your confirmation.
