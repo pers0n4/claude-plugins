@@ -1,0 +1,12 @@
+pre-commit:
+  parallel: true
+  commands:
+    format-markdown:
+      glob: "**/*.md"
+      run: dprint fmt {staged_files}
+      stage_fixed: true
+
+commit-msg:
+  commands:
+    conventional-commits:
+      run: cog verify --file {1}

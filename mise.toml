@@ -1,0 +1,4 @@
+[tools]
+lefthook = "latest"
+cocogitto = "latest"
+dprint = "latest"
