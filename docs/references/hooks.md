@@ -91,7 +91,10 @@ Hooks are registered in JSON settings files or plugin manifests. Claude Code loa
 Runs a shell command. Input is written to stdin as a JSON object. The hook communicates results via exit code and stdout JSON.
 
 ```json
-{ "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/pre-tool.mjs\"" }
+{
+  "type": "command",
+  "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/pre-tool.mjs\""
+}
 ```
 
 - Use `${CLAUDE_PLUGIN_ROOT}` for portable paths inside plugins.
@@ -111,7 +114,10 @@ POSTs the input JSON as the request body to the given URL. The response body is 
 Sends the event data to a fast LLM for evaluation. Returns `{ "ok": true/false, "reason": "..." }`. Useful for natural-language policy checks.
 
 ```json
-{ "type": "prompt", "command": "Deny any request that touches files outside the project directory." }
+{
+  "type": "prompt",
+  "command": "Deny any request that touches files outside the project directory."
+}
 ```
 
 ### agent
@@ -119,7 +125,10 @@ Sends the event data to a fast LLM for evaluation. Returns `{ "ok": true/false, 
 Launches a limited multi-turn agent with access to read-only tools (Read, Grep, Glob) for complex verification that needs to inspect files before deciding. Returns the same output JSON format as other types.
 
 ```json
-{ "type": "agent", "command": "Verify the changed file has a matching test file." }
+{
+  "type": "agent",
+  "command": "Verify the changed file has a matching test file."
+}
 ```
 
 ---
